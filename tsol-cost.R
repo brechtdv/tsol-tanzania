@@ -23,7 +23,7 @@ pop <- 44928923
 e_prev_min <- 0.00282453
 e_prev_max <- 0.0115
 
-## proportion PWE with NCC, uniform parameters 
+## proportion PWE with NCC, Uniform parameters 
 prop_ncc_min <- 0.07692308
 prop_ncc_max <- 0.22764228
 
@@ -56,7 +56,7 @@ loss_workingtime_max <- 24
 ## probability of losing job, Fixed
 unemployed_duetoepilepsy <- 0.3
 
-## number of working days, Uniform parameters
+## number of working days per year, Uniform parameters
 working_days_min <- 220
 working_days_max <- 312
 
@@ -139,10 +139,6 @@ n_notreat <- xyz[4, ]
 ## number of visits to the medical doctor
 n_visit_med <- runif(n, n_visit_med_min, n_visit_med_max)
 
-## number of visits to the traditional healer
-#n_visit_heal <- runif(n, n_year_heal_min, n_year_heal_max)
-#mean(n_visit_heal)
-
 ## price of traditional healer
 price_heal <- rgamma(n, price_heal_shape, price_heal_rate)
 
@@ -150,6 +146,7 @@ price_heal <- rgamma(n, price_heal_shape, price_heal_rate)
 p_carba <- rbeta(n, p_carba_alpha, p_carba_beta)
 n_carba <- (n_hosp + n_med + n_medheal) * p_carba
 
+## working days per year
 working_days <- runif(n, working_days_min, working_days_max)
 
 ## loss of work, corrected
