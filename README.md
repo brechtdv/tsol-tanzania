@@ -1,7 +1,7 @@
 ## tsol-tanzania
 ### Health and economic impact of _Taenia solium_ in Tanzania
 
-Code for "The societal cost of _Taenia solium_ cysticercosis in Tanzania", submitted to Acta Tropica.
+Code for "The societal cost of _Taenia solium_ cysticercosis in Tanzania", published in [Acta Tropica](http://dx.doi.org/10.1016/j.actatropica.2015.12.021).
 
 ##### Contents
 <table>
